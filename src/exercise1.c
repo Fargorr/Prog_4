@@ -10,10 +10,10 @@ int main(int argc, char** argv) {
 
  double summa = 0.0;
  for (int i = 0; i < 10; i++) {
-	summa += array[i];
+	summa += (int)(array[i]*100);
 
  }
- printf("%0.2f\n", summa/10);
+ printf("%0.2f\n", summa/1000);
  
 
  return 0;
