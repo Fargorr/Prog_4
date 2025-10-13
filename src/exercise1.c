@@ -8,13 +8,12 @@ int main(int argc, char** argv) {
  scanf("%lf", &array[i]);
  }
 
- int summa = 0;
+ double summa = 0.0;
  for (int i = 0; i < 10; i++) {
-	summa += (int)(array[i] * 100);
+	summa += array[i];
 
  }
- summa /= 10;
- printf("%0.2f\n", (double)summa/100.0);
+ printf("%0.2f\n", summa/10);
  
 
  return 0;
