@@ -9,10 +9,10 @@ int main(int argc, char** argv) {
  }
  double summa = 0;
  for (int i = 0; i < 10; i++) {
-	summa += array[i];
+	summa += array[i] * 100;
 
  }
- printf("%0.2f\n", (double)summa/10.0);
+ printf("%0.2f\n", (double)summa/1000.0);
  
 
  return 0;
