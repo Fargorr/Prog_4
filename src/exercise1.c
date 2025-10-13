@@ -7,9 +7,9 @@ int main(int argc, char** argv) {
  for(int i = 0; i < 10; ++i) {
  scanf("%lf", &array[i]);
  }
- double summa = 0;
+ int summa = 0;
  for (int i = 0; i < 10; i++) {
-	summa += array[i] * 100;
+	summa += (int)(array[i] * 100);
 
  }
  printf("%0.2f\n", (double)summa/1000.0);
