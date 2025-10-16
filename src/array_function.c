@@ -17,8 +17,6 @@ void join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t siz
                 dest[size_src1 + i] = src2[i];
         }
 	
-	size_t right = dest[i];
-	size_t left - dest[0];
 	
 	for (size_t i = 0; i < size_src1 + size_src2-1; i++) {
 		swap = 0;
