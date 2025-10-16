@@ -26,12 +26,13 @@ void join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t siz
 				dest[j] = dest[j+1];
 				dest[j+1] = min;
 				swap = 1;
-			}	
-		if (swap == 0) {
-			break;
-		}	
-		}	
+			}
+		}
 
+		if (swap == 0) {
+			break;	
+		}	
+		
 	}
 }
 
