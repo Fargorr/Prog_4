@@ -19,7 +19,7 @@ void join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t siz
 	
 	
 	for (size_t i = 0; i < size_src1 + size_src2-1; i++) {
-		swap = 0;
+		int swap = 0;
 		for (size_t j = 0; j < size_src1 + size_src2-1-i; j++) {
 			if (dest[i] > dest[i+1]) {
 				int min = dest[i];
@@ -27,7 +27,7 @@ void join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t siz
 				dest[i+1] = min;
 				swap = 1;
 			}	
-		if (swap == 0); {
+		if (swap == 0) {
 			break;
 		}	
 		}	
