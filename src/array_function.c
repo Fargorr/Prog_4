@@ -21,10 +21,10 @@ void join_and_sort_int_arrays(int* src1, size_t size_src1, int* src2, size_t siz
 	for (size_t i = 0; i < size_src1 + size_src2-1; i++) {
 		int swap = 0;
 		for (size_t j = 0; j < size_src1 + size_src2-1-i; j++) {
-			if (dest[i] > dest[i+1]) {
-				int min = dest[i];
-				dest[i] = dest[i+1];
-				dest[i+1] = min;
+			if (dest[j] > dest[j+1]) {
+				int min = dest[j];
+				dest[j] = dest[j+1];
+				dest[j+1] = min;
 				swap = 1;
 			}	
 		if (swap == 0) {
