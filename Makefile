@@ -2,14 +2,17 @@ CC=gcc
 CFLAGS=-Wall --pedantic
 BIN=./bin
 SRC=./src
-TESTDIR=./tests
+TESTDIR=./test
+EXTRA=./extra
 
-all: homework
+test1: bin
+	$(CC) $(CFLAGS) $(TESTDIR)/test_join_array.c $(SRC)/array_function.c $(EXTRA)/Unity/unity.c -o $(BIN)/test1 && $(BIN)/test1
 
-homework: bin
+test2: bin
+	$(CC) $(CFLAGS) $(TESTDIR)/test_join_and_sort_array.c $(SRC)/array_function.c $(EXTRA)/Unity/unity.c -o $(BIN)/test2 && $(BIN)/test2
 
-test: homework
-	$(TESTDIR)/test.sh
+test3: bin
+	$(CC) $(CFLAGS) $(TESTDIR)/test_get_min_and_max_from_array.c $(SRC)/array_function.c $(EXTRA)/Unity/unity.c -o $(BIN)/test3 && $(BIN)/test3
 
 bin:
 	mkdir $(BIN)
