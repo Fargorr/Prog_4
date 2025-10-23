@@ -96,7 +96,7 @@ int* merge(int* intervals, int intervalsSize, int* returnSize) {
         }
 	
        	*returnSize = rezultSize / 2;
-	return result_arr;	
+		
 }
 
 
